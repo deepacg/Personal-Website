@@ -109,11 +109,12 @@
 
         <div class="col-md-4 pt-4">
           <div class="card">
-            <i class="fab fa-python display-1 text-center p-3 text-info"></i>
+            <i class="fas fa-clipboard-list display-1 text-center p-3 text-info"></i>
             <div class="card-body">
-              <h5 class="card-title">Self</h5>
-              <p class="card-text">Python developer</p>
-
+              <h5 class="card-title">To Do App</h5>
+              <p class="card-text">Frontend Development</p>
+              <p class="card-text">React.js, Local storage</p>
+              <p>July 2021 - 10 days</p>
             </div>
           </div>
         </div>
@@ -121,7 +122,7 @@
         <div class="col-md-4 pt-4">
           <div class="card">
 
-            <i class="fas fa-code display-1 text-center p-3 text-info"></i>
+            <i class="fab fa-react display-1 text-center p-3 text-info"></i>
             <div class="card-body">
               <h5 class="card-title">Self</h5>
               <p class="card-text">Web Developer</p>
@@ -177,26 +178,14 @@
     <div class="container">
       <h2 class="text-center">Skills</h2>
       <div class="row">
-        <div class="col-md-4 pt-4">
-          <div class="card">
-
-            <i class="fas fa-laptop-code display-1 text-center p-3 text-info"></i>
-            <div class="card-body">
-              <h5 class="card-title">Programming</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
-
-            </div>
-          </div>
-        </div>
+        
 
         <div class="col-md-4 pt-4">
           <div class="card">
-            <i class="fab fa-python display-1 text-center p-3 text-info"></i>
+            <i class="fab fa-node display-1 text-center p-3 text-info"></i>
             <div class="card-body">
-              <h5 class="card-title">Node.js, Python</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
+              <h5 class="card-title">Node.js</h5>
+              <p class="card-text">Backend - Server-side programming</p>
 
             </div>
           </div>
@@ -205,10 +194,22 @@
         <div class="col-md-4 pt-4">
           <div class="card">
 
-            <i class="fas fa-code display-1 text-center p-3 text-info"></i>
+            <i class="fab fa-react display-1 text-center p-3 text-info"></i>
             <div class="card-body">
-              <h5 class="card-title">Web Development</h5>
-              <p class="card-text">HTML, CSS, Java script, JQuery, Bootstrap</p>
+              <h5 class="card-title">React.js</h5>
+              <p class="card-text">Frontend - Client-side programming</p>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 pt-4">
+          <div class="card">
+
+            <i class="fas fa-database display-1 text-center p-3 text-info"></i>
+            <div class="card-body">
+              <h5 class="card-title">MongoDB</h5>
+              <p class="card-text">Backend Database query programming</p>
 
             </div>
           </div>
@@ -232,9 +233,9 @@
         <div class="col-md-4 pt-4">
           <div class="card">
 
-            <i class="fas fa-keyboard display-1 text-center p-3 text-info"></i>
+            <i class="fab fa-python display-1 text-center p-3 text-info"></i>
             <div class="card-body">
-              <h5 class="card-title">Software development</h5>
+              <h5 class="card-title">Python</h5>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
                 content.</p>
 
@@ -359,37 +360,39 @@
       <h2 class="text-center pb-2">Contact me</h2>
       
       <form id="submit-form" action="" class='form-border p-4'>
+        <!-- <form id="gform" method='POST' action='https://script.google.com/macros/s/AKfycbxiSS3Tm5y71_vvsWVVlY6GRxweXxWGs9daXHsdew/exec' class='form-border p-4'> -->
         <div class="form-row pt-3">
           <div class="form-group col-md-6">
-            <label for="exampleInputName1">Name</label>
-            <input type="text" class="form-control" id="exampleInputName1" aria-describedby="nameHelp"
+            <label>Name</label>
+            <input type="text" class="form-control" id="name" name='name' aria-describedby="nameHelp"
               placeholder="Enter name">
 
           </div>
           <div class="form-group col-md-6">
-            <label for="exampleInputName1">Location</label>
-            <input type="text" class="form-control" id="exampleInputName1" aria-describedby="nameHelp"
-              placeholder="Enter location">
+            <label>Mobile number</label>
+            <input type="tel" class="form-control" id="mobile" name='mobile' aria-describedby="emailHelp"
+              placeholder="Enter mobile">
 
           </div>
         </div>
         <div class="form-row">
           <div class="form-group col-md-6">
-            <label for="exampleInputEmail1">Email address</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+            <label>Email address</label>
+            <input type="email" class="form-control" id="email" name='email' aria-describedby="emailHelp"
               placeholder="Enter email">
             <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
           </div>
           <div class="form-group col-md-6">
-            <label for="exampleInputEmail1">Mobile number</label>
-            <input type="tel" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-              placeholder="Enter mobile">
+            <label>Place</label>
+            <input type="text" class="form-control" id="place" name='place' aria-describedby="nameHelp"
+              placeholder="Enter location">
 
           </div>
+          
         </div>
         <div class="form-group">
-          <label for="exampleInputMessage1">Message</label>
-          <textarea class="form-control" cols="30" rows="3" placeholder="Enter your message.."></textarea>
+          <label>Message</label>
+          <textarea class="form-control" cols="30" rows="3" id='message' name='message' placeholder="Enter your message.."></textarea>
         </div>
         <div class="form-group text-center pt-2">
           <button style="width: 30%; height: 2.5em; font-size: 1.2rem;" type="submit" class="btn btn-info my-auto">Submit</button>
@@ -421,7 +424,7 @@
     </div>
   </footer>
   
-  <!-- jQuery, Popper, Bootstrap, Fontawesome -->
+  <!-- jQuery, Popper, Bootstrap, Fontawesome
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
     crossorigin="anonymous"></script>
@@ -430,7 +433,9 @@
     crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
+    crossorigin="anonymous"></script> -->
+
+    
   <script src="https://kit.fontawesome.com/58b7f51dc6.js" crossorigin="anonymous"></script>
 
 <style>
@@ -446,13 +451,12 @@
     $("#submit-form").submit((e) => {
       e.preventDefault()
       $.ajax({
-        url: "https://script.google.com/macros/s/AKfycbzqKaLL-ikrItrGtFTXrzsTvT-9JO2p2PZY0tvG/exec",
+        url: "https://script.google.com/macros/s/AKfycbxiSS3Tm5y71_vvsWVVlY6GRxweXxWGs9daXHsdew/exec",
         data: $("#submit-form").serialize(),
         method: "post",
         success: function (response) {
           alert("Form submitted successfully")
           window.location.reload()
-          //window.location.href="https://google.com"
         },
         error: function (err) {
           alert("Something Error")
