@@ -377,46 +377,50 @@
 
 <section class="p-4" id="contact-section">
   <div class="row" >
-    <div class="col-md-12 mx-auto">
+    <div class="col-md-12">
     <div class="container">
       
-      <h2 class="text-center pb-2">Contact me</h2>
+      <h2 class="text-center pb-2"> Contact me </h2>
       
-      <form id="submit-form" action="" class='form-border p-4'>
+      <form method='POST' action='https://formspree.io/f/mqkwyyov' class='form-border p-3'>
+      <!-- <form id="submit-form" action="" class='form-border p-4'> -->
         <!-- <form id="gform" method='POST' action='https://script.google.com/macros/s/AKfycbxiSS3Tm5y71_vvsWVVlY6GRxweXxWGs9daXHsdew/exec' class='form-border p-4'> -->
         <div class="form-row pt-3">
-          <div class="form-group col-md-6">
+          <div class="form-group col-md-12 col-lg-12">
             <label>Name</label>
             <input type="text" class="form-control" id="name" name='name' aria-describedby="nameHelp"
               placeholder="Enter name">
 
           </div>
-          <div class="form-group col-md-6">
+          <!-- <div class="form-group col-md-6">
             <label>Mobile number</label>
             <input type="tel" class="form-control" id="mobile" name='mobile' aria-describedby="emailHelp"
               placeholder="Enter mobile">
 
-          </div>
+          </div> -->
         </div>
         <div class="form-row">
-          <div class="form-group col-md-6">
+          <div class="form-group col-md-12 col-lg-12">
             <label>Email address</label>
             <input type="email" class="form-control" id="email" name='email' aria-describedby="emailHelp"
               placeholder="Enter email">
             <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
           </div>
-          <div class="form-group col-md-6">
+          <!-- <div class="form-group col-md-6">
             <label>Place</label>
             <input type="text" class="form-control" id="place" name='place' aria-describedby="nameHelp"
               placeholder="Enter location">
 
-          </div>
+          </div> -->
           
         </div>
-        <div class="form-group">
+        <div class="form-row">
+        <div class="form-group col-md-12 col-lg-12">
           <label>Message</label>
           <textarea class="form-control" cols="30" rows="3" id='message' name='message' placeholder="Enter your message.."></textarea>
         </div>
+      </div>
+
         <div class="form-group text-center pt-2">
           <button style="width: 30%; height: 2.5em; font-size: 1.2rem;" type="submit" class="btn btn-info my-auto">Submit</button>
         </div>
@@ -446,31 +450,8 @@
       </div>
     </div>
   </footer>
-  
-  <!-- jQuery, Popper, Bootstrap, Fontawesome
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script> -->
 
-    
-  <script src="https://kit.fontawesome.com/58b7f51dc6.js" crossorigin="anonymous"></script>
-
-<style>
-.form-border {
-  font-size: 18px; 
-  border: solid 2px rgb(21, 182, 182); 
-  border-style: dotted; 
-  border-radius: 10px;
-}
-</style>
-
-  <script>
+  <!-- <script>
     $("#submit-form").submit((e) => {
       e.preventDefault()
       $.ajax({
@@ -487,8 +468,33 @@
         }
       })
     })
-  </script>
+  </script> -->
+  
+  <!-- jQuery, Popper, Bootstrap, Fontawesome-->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
 
-</body>
+    
+  <script src="https://kit.fontawesome.com/58b7f51dc6.js" crossorigin="anonymous"></script>
+
+    <style>
+      .form-border {
+        font-size: 18px; 
+        border: solid 2px rgb(21, 182, 182); 
+        border-style: dotted; 
+        border-radius: 10px;
+      }
+    </style>
+
+
+
+  </body>
 
 </html>
